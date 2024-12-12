@@ -91,7 +91,7 @@ def handle_message(event: MessageEvent):
                 return
 
             try:
-                gemini_response = model.generate_content(['อธิบายรูปภาพนี้', image])
+                gemini_response = model.generate_content(['แต่งนิยายจากภาพนี้', image])
                 response_text = gemini_response.text
             except Exception as e:
                 response_text = f"เกิดข้อผิดพลาด, ไม่สามารถประมวลผลรูปภาพได้"
